@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>buy1take2寸止-buy1take2寸止玩法_buy1take2寸止记录与安全要点</title>
+<meta name="description" content="buy1take2寸止主题首页：说明buy1take2寸止的基本玩法、节奏判断、记录方式与安全注意点，帮助你理解这一控制练习的核心含义与常见问题。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c2b3a'/%3E%3Cpath d='M14 40h8V24h-8zM28 40h8V16h-8zM42 40h8V32h-8z' fill='%23f0b429'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1c2b3a;
+  --ink-soft:#41556b;
+  --paper:#f6f1e7;
+  --paper-2:#fffdf8;
+  --gold:#c98a12;
+  --gold-soft:#f2d9a4;
+  --line:#ddd2be;
+  --teal:#2f6d6a;
+  --radius:14px;
+  --maxw:1120px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--teal);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+img,svg{max-width:100%;}
+
+/* header */
+header.site{
+  background:var(--ink);
+  color:#fff;
+  position:sticky;
+  top:0;
+  z-index:50;
+  border-bottom:3px solid var(--gold);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:12px 22px;
+  max-width:var(--maxw);
+  margin:0 auto;
+  flex-wrap:wrap;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  color:#fff;
+  font-weight:800;
+  font-size:1.02rem;
+  letter-spacing:.01em;
+}
+.brand:hover{text-decoration:none;}
+.brand .mark{
+  width:38px;height:38px;flex:0 0 38px;
+  background:#12202d;
+  border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid #3b4f63;
+}
+nav.main ul{
+  list-style:none;
+  display:flex;
+  gap:6px;
+  margin:0;
+  padding:0;
+  flex-wrap:wrap;
+}
+nav.main a{
+  display:block;
+  color:#dbe6ee;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:.92rem;
+}
+nav.main a:hover{
+  background:#2b3f52;
+  color:#fff;
+  text-decoration:none;
+}
+
+/* hero */
+.hero{
+  background:
+    radial-gradient(circle at 88% 12%, rgba(201,138,18,.18), transparent 46%),
+    linear-gradient(160deg,#1c2b3a 0%,#243b4d 62%,#2f4a5c 100%);
+  color:#fff;
+  padding:52px 0 56px;
+  border-bottom:1px solid #0f1d29;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:44px;
+  align-items:center;
+}
+.eyebrow{
+  display:inline-block;
+  font-size:.78rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--gold-soft);
+  border:1px solid rgba(242,217,164,.45);
+  border-radius:999px;
+  padding:3px 13px;
+  margin-bottom:16px;
+}
+h1{
+  font-size:2.35rem;
+  line-height:1.25;
+  margin:0 0 16px;
+  font-weight:900;
+  letter-spacing:.005em;
+  word-break:break-word;
+}
+.hero p.lead{
+  color:#cfdbe4;
+  font-size:1.03rem;
+  margin:0 0 26px;
+  max-width:44ch;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:11px 22px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:.95rem;
+  border:1.5px solid transparent;
+  cursor:pointer;
+}
+.btn-gold{
+  background:var(--gold);
+  color:#1a1206;
+}
+.btn-gold:hover{background:#e0a021;text-decoration:none;}
+.btn-ghost{
+  border-color:rgba(255,255,255,.4);
+  color:#fff;
+}
+.btn-ghost:hover{background:rgba(255,255,255,.1);text-decoration:none;}
+.hero-stats{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+.stat{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:var(--radius);
+  padding:16px 18px;
+}
+.stat b{
+  display:block;
+  font-size:1.5rem;
+  color:var(--gold-soft);
+  line-height:1.2;
+}
+.stat span{
+  font-size:.83rem;
+  color:#bccbd6;
+}
+
+/* sections */
+section.block{padding:56px 0;}
+section.block.alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.sec-head{
+  display:flex;
+  align-items:baseline;
+  gap:14px;
+  margin-bottom:10px;
+  flex-wrap:wrap;
+}
+h2{
+  font-size:1.55rem;
+  margin:0;
+  font-weight:800;
+  position:relative;
+  padding-left:14px;
+}
+h2::before{
+  content:"";
+  position:absolute;
+  left:0;top:.28em;
+  width:5px;height:1.05em;
+  background:var(--gold);
+  border-radius:3px;
+}
+.sec-note{color:var(--ink-soft);font-size:.92rem;margin:0 0 30px;max-width:62ch;}
+h3{font-size:1.08rem;margin:0 0 8px;font-weight:800;}
+
+/* cards */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.card{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px 22px 24px;
+  display:flex;
+  flex-direction:column;
+}
+.card .ico{
+  width:44px;height:44px;
+  border-radius:11px;
+  background:#f7ecd5;
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:14px;
+}
+.card p{margin:0;color:var(--ink-soft);font-size:.94rem;}
+.card .tag{
+  margin-top:14px;
+  font-size:.78rem;
+  color:var(--teal);
+  font-weight:700;
+  letter-spacing:.04em;
+}
+
+/* two-col */
+.split{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:42px;
+  align-items:start;
+}
+.prose p{color:var(--ink-soft);margin:0 0 15px;max-width:60ch;}
+.prose strong{color:var(--ink);}
+.panel{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:24px;
+}
+.panel h3{margin-bottom:12px;}
+ol.steps{
+  margin:0;padding-left:20px;color:var(--ink-soft);
+}
+ol.steps li{margin-bottom:12px;}
+ol.steps li b{color:var(--ink);}
+
+/* table */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff;}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem;}
+th,td{padding:13px 16px;text-align:left;border-bottom:1px solid #eee5d5;}
+th{background:#f3ead9;font-weight:800;color:var(--ink);white-space:nowrap;}
+td{color:var(--ink-soft);}
+tr:last-child td{border-bottom:none;}
+
+/* faq */
+details{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:16px 20px;
+  margin-bottom:12px;
+}
+details[open]{border-color:var(--gold);}
+summary{
+  cursor:pointer;
+  font-weight:700;
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{
+  content:"+";
+  color:var(--gold);
+  font-size:1.3rem;
+  line-height:1;
+  font-weight:400;
+}
+details[open] summary::after{content:"–";}
+details p{margin:12px 0 0;color:var(--ink-soft);font-size:.94rem;}
+
+/* notice strip */
+.strip{
+  background:linear-gradient(90deg,#f7ecd5,#fdf8ee);
+  border:1px solid var(--gold-soft);
+  border-radius:var(--radius);
+  padding:20px 24px;
+  display:flex;
+  gap:16px;
+  align-items:flex-start;
+  margin-top:34px;
+}
+.strip p{margin:0;color:#6b4f16;font-size:.92rem;}
+
+/* download */
+.dl-box{
+  background:var(--ink);
+  color:#fff;
+  border-radius:18px;
+  padding:34px 34px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:26px;
+  flex-wrap:wrap;
+}
+.dl-box h3{color:#fff;font-size:1.25rem;margin-bottom:6px;}
+.dl-box p{margin:0;color:#b9c8d3;font-size:.92rem;max-width:52ch;}
+.btn[aria-disabled="true"]{
+  background:var(--gold);
+  color:#1a1206;
+  pointer-events:none;
+  opacity:.92;
+}
+
+/* footer */
+footer.site{
+  background:#12202d;
+  color:#9fb2c0;
+  padding:38px 0 30px;
+  font-size:.9rem;
+}
+footer .foot-grid{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  flex-wrap:wrap;
+  padding-bottom:24px;
+  border-bottom:1px solid #23374a;
+  margin-bottom:20px;
+}
+footer .brand{color:#fff;margin-bottom:10px;}
+footer a{color:#c9d7e1;}
+footer nav ul{list-style:none;display:flex;gap:18px;padding:0;margin:0;flex-wrap:wrap;}
+footer nav a{color:#c9d7e1;font-size:.9rem;}
+.copyright{color:#7b8f9e;font-size:.84rem;}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-grid,.split{grid-template-columns:1fr;gap:30px;}
+  .cards{grid-template-columns:1fr 1fr;}
+  h1{font-size:1.95rem;}
+}
+@media (max-width:640px){
+  body{font-size:15.5px;}
+  .header-inner{padding:10px 16px;gap:10px;}
+  nav.main ul{gap:2px;}
+  nav.main a{padding:5px 9px;font-size:.85rem;}
+  .hero{padding:38px 0 42px;}
+  h1{font-size:1.62rem;line-height:1.32;}
+  .hero p.lead{font-size:.96rem;}
+  .cards{grid-template-columns:1fr;}
+  section.block{padding:40px 0;}
+  h2{font-size:1.3rem;}
+  .wrap{padding:0 16px;}
+  .hero-stats{grid-template-columns:1fr 1fr;}
+  .dl-box{padding:24px;}
+  footer .foot-grid{flex-direction:column;gap:18px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="buy1take2寸止 首页">
+      <span class="mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="13" width="3.6" height="8" rx="1" fill="#f0b429"/>
+          <rect x="10.2" y="8" width="3.6" height="13" rx="1" fill="#f0b429"/>
+          <rect x="17.4" y="4" width="3.6" height="17" rx="1" fill="#f0b429"/>
+        </svg>
+      </span>
+      buy1take2寸止
+    </a>
+    <nav class="main" aria-label="主导航">
+      <ul>
+        <li><a href="#concept">玩法含义</a></li>
+        <li><a href="#rhythm">节奏判断</a></li>
+        <li><a href="#record">记录方法</a></li>
+        <li><a href="#safety">安全要点</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">节奏控制 · 自我观察</span>
+        <h1>buy1take2寸止</h1>
+        <p class="lead">buy1take2寸止是一种以“接近临界、及时停下”为核心的自我控制练习。这个首页把玩法含义、节奏判断、记录方式与安全边界放在一处，方便你先理解，再决定是否尝试。</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#concept">读懂 buy1take2寸止</a>
+          <a class="btn btn-ghost" href="#record">查看记录方法</a>
+        </div>
+      </div>
+      <div class="hero-stats" aria-label="页面要点概览">
+        <div class="stat"><b>1+2</b><span>一轮内常见的分段节奏</span></div>
+        <div class="stat"><b>3 步</b><span>观察、停下、缓和的循环</span></div>
+        <div class="stat"><b>0 器材</b><span>以计时与记录为主</span></div>
+        <div class="stat"><b>先停后缓</b><span>安全优先于完成轮次</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPT -->
+  <section class="block" id="concept">
+    <div class="wrap">
+      <div class="sec-head"><h2>buy1take2寸止在说什么</h2></div>
+      <p class="sec-note">理解这个说法，需要把“buy1take2”和“寸止”分开看：前者强调分段与重复，后者强调临界前的收住。两者合起来，才是 buy1take2寸止 的完整含义。</p>
+      <div class="cards">
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 18h4V9H4zM10 18h4V5h-4zM16 18h4v-6h-4z" fill="#c98a12"/></svg>
+          </div>
+          <h3>分段：buy1take2 的读法</h3>
+          <p>“buy1take2”通常被理解为一次投入、两段体验的结构。放到 buy1take2寸止 里，它提示练习者把一轮过程拆成可控的小段，而不是一口气走到底。</p>
+          <span class="tag">结构先行</span>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 3v6l4 2" stroke="#c98a12" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>寸止：临界前的收住</h3>
+          <p>“寸止”指在非常接近临界点的位置主动停下，留出一小段缓冲。它考验的不是忍耐时长，而是能否识别身体信号并稳定执行停止动作。</p>
+          <span class="tag">识别信号</span>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="#c98a12" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>合起来：可重复的练习</h3>
+          <p>把分段与寸止组合，buy1take2寸止 更接近一种可重复的节奏练习：每段结束时评估状态，再决定是否进入下一段，而不是追求单次极限。</p>
+          <span class="tag">重复评估</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RHYTHM -->
+  <section class="block alt" id="rhythm">
+    <div class="wrap split">
+      <div class="prose">
+        <div class="sec-head"><h2>怎样判断自己的节奏</h2></div>
+        <p>节奏判断是 buy1take2寸止 里最容易被忽略的一环。很多讨论只关注“停没停住”，却不谈停下之前的状态是否还在可控范围。实际操作中，更稳妥的做法是把注意力放在三个信号上：<strong>呼吸是否变浅、肌肉是否绷紧、注意力是否收窄</strong>。任意一项明显出现，就应当提前结束当前段。</p>
+        <p>分段的长短不必固定。第一次尝试时，可以给每段设一个较保守的时间上限，例如比自认为的临界点提前一段距离停下；熟悉之后再逐次微调。buy1take2寸止 的价值在于形成稳定的判断习惯，而不是把每一轮都推到极限。</p>
+        <p>如果某一段结束后仍感到心跳过快、难以放松，说明停止时机偏晚。下一轮应当缩短分段，而不是硬撑。节奏是给自己用的，不需要与他人比较轮次或时长。</p>
+        <div class="strip">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="flex:0 0 22px;margin-top:3px"><path d="M12 4l9 16H3L12 4z" stroke="#c98a12" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v4M12 17v.5" stroke="#c98a12" stroke-width="2" stroke-linecap="round"/></svg>
+          <p>任何不适、疼痛、头晕或情绪明显波动都应立即停止练习。buy1take2寸止 是自我观察，不是耐受测试。</p>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>一轮内的三段参考</h3>
+        <ol class="steps">
+          <li><b>第一段：轻。</b>以低强度进入，确认身体状态与当下情绪，记录起始时间。</li>
+          <li><b>第二段：稳。</b>保持稳定节奏，出现呼吸变浅即视为接近临界，提前收住。</li>
+          <li><b>第三段：缓。</b>停止后不立刻进入下一步，留出缓和时间，再做简短记录。</li>
+        </ol>
+        <p style="margin:16px 0 0;color:var(--ink-soft);font-size:.9rem;">以上只是参考框架。buy1take2寸止 的分段数量与长短因人而异，以自己能稳定执行为准。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECORD -->
+  <section class="block" id="record">
+    <div class="wrap">
+      <div class="sec-head"><h2>记录方法：让 buy1take2寸止 可复盘</h2></div>
+      <p class="sec-note">记录的目的不是攒数据，而是让下一次的停止时机更准确。字段不必多，能长期填下去才有意义。</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>记录项</th><th>填写内容</th><th>作用</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>日期与时段</td><td>日期、开始时间</td><td>观察自己更容易在哪些时段进入状态</td></tr>
+            <tr><td>分段数</td><td>本轮实际完成几段</td><td>判断 buy1take2寸止 的节奏是否稳定</td></tr>
+            <tr><td>停止信号</td><td>呼吸、肌肉或注意力中的哪一项先出现</td><td>积累个人化的临界识别经验</td></tr>
+            <tr><td>缓和感受</td><td>停止后 1 分钟内的主观状态</td><td>检验停止时机是否偏晚</td></tr>
+            <tr><td>下一轮调整</td><td>一句具体改动</td><td>把复盘变成下一次的行动</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="strip">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="flex:0 0 22px;margin-top:3px"><path d="M4 5h16v14H4z" stroke="#c98a12" stroke-width="2"/><path d="M8 9h8M8 13h5" stroke="#c98a12" stroke-width="2" stroke-linecap="round"/></svg>
+        <p>记录建议只写客观现象与主观感受，不必追求格式统一。buy1take2寸止 的复盘重点是“当时发生了什么”，而不是给每轮打分。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY -->
+  <section class="block alt" id="safety">
+    <div class="wrap split">
+      <div class="prose">
+        <div class="sec-head"><h2>安全要点与常见误区</h2></div>
+        <p>讨论 buy1take2寸止 时，最容易出现的误区是把“停得住”当成唯一目标。实际上，安全边界比完成度更重要：身体疲劳、睡眠不足、情绪紧张时，临界点会明显提前，此时按平时的分段执行反而容易过头。</p>
+        <p>另一个误区是用轮次多少衡量效果。buy1take2寸止 并不存在统一标准，别人记录的段数只对本人有参考价值。更合理的比较对象是自己上一轮的记录，看停止信号是否出现得更早、缓和是否更快。</p>
+        <p>最后，练习应当是私密且自愿的。若过程中出现持续不适，应停止并在需要时寻求专业意见。任何以“坚持更久”为名的加码，都与这一练习的初衷相悖。</p>
+      </div>
+      <div class="panel">
+        <h3>开始前自查</h3>
+        <ol class="steps">
+          <li><b>状态：</b>是否疲劳、饮酒或情绪波动明显？若是，推迟练习。</li>
+          <li><b>环境：</b>是否私密、安静、可随时中止？</li>
+          <li><b>预期：</b>是否把完成轮次放在安全之前？若是，先放下预期。</li>
+          <li><b>退出：</b>是否已想好随时结束的方式与缓和安排？</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="sec-head"><h2>关于 buy1take2寸止 的常见问题</h2></div>
+      <p class="sec-note">以下回答围绕含义、节奏与记录展开，不涉及具体身体操作细节，目的是帮助建立稳妥的认知框架。</p>
+      <details>
+        <summary>buy1take2寸止 里的“1+2”是固定规则吗？</summary>
+        <p>不是硬性规定。它更接近一种结构提示：一次进入、分两段观察。实际分段数量可以按个人状态调整，重点是每段结束都有明确的评估与停止动作。</p>
+      </details>
+      <details>
+        <summary>每次都必须停在临界点附近才算数吗？</summary>
+        <p>不必。buy1take2寸止 训练的是识别与执行，提前停下同样有效。早期刻意保守，反而更容易建立稳定的判断习惯。</p>
+      </details>
+      <details>
+        <summary>记录需要很详细吗？</summary>
+        <p>不必。三到五个字段即可，例如分段数、先出现的停止信号、缓和感受与下一轮调整。能持续记录比字段完整更重要。</p>
+      </details>
+      <details>
+        <summary>什么时候应该暂停练习？</summary>
+        <p>出现疼痛、头晕、明显心慌、情绪失控，或近期睡眠与压力状况较差时，都应暂停。buy1take2寸止 的前提是身体处于可观察的平稳状态。</p>
+      </details>
+      <details>
+        <summary>可以把这个练习当成日常习惯吗？</summary>
+        <p>是否安排为习惯由个人决定，但应保留弹性：状态不好就跳过，不补轮次、不加码。把它当作观察自己的方式，而不是必须完成的清单。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD / CTA -->
+  <section class="block alt">
+    <div class="wrap">
+      <div class="dl-box">
+        <div>
+          <h3>带走一份 buy1take2寸止 记录模板</h3>
+          <p>包含分段计时栏、停止信号勾选与缓和感受三部分，可打印后手写填写。文件仍在准备中，开放下载后会在此处更新。</p>
+        </div>
+        <a class="btn" href="#" download data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">
+          <span class="mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3.6" height="8" rx="1" fill="#f0b429"/><rect x="10.2" y="8" width="3.6" height="13" rx="1" fill="#f0b429"/><rect x="17.4" y="4" width="3.6" height="17" rx="1" fill="#f0b429"/></svg>
+          </span>
+          buy1take2寸止
+        </div>
+        <p style="margin:0;max-width:38ch;color:#8fa3b2;">围绕 buy1take2寸止 的含义、节奏判断与记录方法展开的主题页面，强调安全优先与自我观察。</p>
+      </div>
+      <nav aria-label="页脚导航">
+        <ul>
+          <li><a href="#concept">玩法含义</a></li>
+          <li><a href="#rhythm">节奏判断</a></li>
+          <li><a href="#record">记录方法</a></li>
+          <li><a href="#safety">安全要点</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copyright">© 2025 buy1take2寸止 · 本页内容仅供认知参考，请以自身状态为先，必要时咨询专业人士。</p>
+  </div>
+</footer>
+
+</body>
+          </html>
