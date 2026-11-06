@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日大赛mrdsfun-每日大赛mrdsfun热点合集_每日大赛mrdsfun爆料速览</title>
+<meta name="description" content="每日大赛mrdsfun热点内容首页，汇聚当日热议话题、爆料合集与热门榜单速览，帮助你快速了解每日大赛mrdsfun的最新看点与讨论焦点。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318181f'/%3E%3Cpath d='M18 42l8-20 6 12 6-12 8 20' stroke='%23ff5b3d' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#18181f;
+  --ink-soft:#3a3a46;
+  --paper:#f6f3ee;
+  --card:#ffffff;
+  --line:#e2dcd2;
+  --hot:#ff5b3d;
+  --hot-deep:#e03d1f;
+  --gold:#d8a13a;
+  --muted:#7b7569;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(246,243,238,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.3px;color:var(--ink)}
+.logo .mark{width:36px;height:36px;border-radius:10px;background:var(--ink);display:grid;place-items:center;flex:none}
+.logo .mark svg{width:22px;height:22px}
+.nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.nav a{
+  font-size:14.5px;color:var(--ink-soft);padding:7px 12px;border-radius:999px;
+  transition:background .2s,color .2s;font-weight:500;
+}
+.nav a:hover{background:#ece6db;color:var(--ink)}
+.nav a.cta{background:var(--hot);color:#fff;font-weight:700}
+.nav a.cta:hover{background:var(--hot-deep);color:#fff}
+
+/* hero */
+.hero{padding:52px 0 44px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;font-weight:700;letter-spacing:1.5px;
+  color:var(--hot-deep);background:#ffece6;border:1px solid #ffd2c7;
+  padding:5px 12px;border-radius:999px;margin-bottom:18px;
+}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--hot);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
+h1{
+  font-size:clamp(30px,4.4vw,52px);
+  line-height:1.18;
+  font-weight:900;
+  letter-spacing:-1.2px;
+  margin-bottom:18px;
+}
+h1 .hl{color:var(--hot)}
+.hero-sub{font-size:16.5px;color:var(--ink-soft);max-width:36em;margin-bottom:26px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 22px;border-radius:12px;font-weight:700;font-size:15px;
+  transition:transform .15s,box-shadow .2s,background .2s;
+}
+.btn-primary{background:var(--ink);color:#fff;box-shadow:0 6px 18px rgba(24,24,31,.18)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(24,24,31,.24)}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn[aria-disabled="true"]{opacity:.6;cursor:default}
+
+.hero-visual{
+  position:relative;background:var(--ink);border-radius:24px;padding:26px;
+  color:#fff;box-shadow:0 24px 50px -20px rgba(24,24,31,.5);overflow:hidden;
+}
+.hero-visual::after{
+  content:"";position:absolute;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,91,61,.55),transparent 70%);
+  top:-70px;right:-60px;
+}
+.hv-label{font-size:12px;letter-spacing:2px;color:#ffb3a3;font-weight:700;margin-bottom:14px}
+.hv-list{display:flex;flex-direction:column;gap:0;position:relative;z-index:1}
+.hv-item{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px dashed rgba(255,255,255,.16)}
+.hv-item:last-child{border-bottom:none}
+.hv-num{font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--gold);width:26px;flex:none}
+.hv-text{font-size:14px;line-height:1.5;color:#e6e2dc}
+
+/* stats strip */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:22px 18px;text-align:center;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none}
+.stat b{display:block;font-size:26px;font-weight:900;letter-spacing:-.5px}
+.stat span{font-size:13px;color:var(--muted)}
+
+/* sections */
+section{padding:56px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.sec-title{font-size:clamp(22px,2.6vw,30px);font-weight:900;letter-spacing:-.6px;line-height:1.3}
+.sec-title .bar{display:inline-block;width:6px;height:22px;background:var(--hot);border-radius:3px;margin-right:12px;vertical-align:-3px}
+.sec-desc{font-size:14.5px;color:var(--muted);max-width:34em}
+
+/* cards */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;transition:transform .18s,box-shadow .2s,border-color .2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -16px rgba(24,24,31,.28);border-color:#cfc7b8}
+.card .tag{
+  display:inline-block;font-size:12px;font-weight:700;letter-spacing:.6px;
+  padding:3px 10px;border-radius:6px;margin-bottom:14px;
+  background:#ffece6;color:var(--hot-deep);
+}
+.card .tag.gold{background:#fdf2da;color:#96690f}
+.card .tag.dark{background:#ece6db;color:var(--ink-soft)}
+.card h3{font-size:18px;font-weight:800;line-height:1.4;margin-bottom:10px;letter-spacing:-.2px}
+.card p{font-size:14.5px;color:var(--ink-soft);line-height:1.7}
+.card .meta{margin-top:16px;font-size:12.5px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+
+/* list feature */
+.feature{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.feature-row{display:grid;grid-template-columns:56px 1fr auto;gap:16px;align-items:center;padding:20px 26px;border-bottom:1px solid var(--line)}
+.feature-row:last-child{border-bottom:none}
+.feature-row:hover{background:#faf8f4}
+.fr-num{font-family:Georgia,serif;font-size:24px;font-weight:700;color:var(--gold);line-height:1}
+.fr-body h3{font-size:16.5px;font-weight:800;margin-bottom:4px}
+.fr-body p{font-size:14px;color:var(--muted)}
+.fr-badge{font-size:12px;font-weight:700;white-space:nowrap;padding:4px 10px;border-radius:999px;background:#ffece6;color:var(--hot-deep)}
+
+/* digest */
+.digest{background:var(--ink);color:#fff;border-radius:24px;padding:44px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.digest h2{font-size:clamp(22px,2.6vw,30px);font-weight:900;line-height:1.3;letter-spacing:-.6px;margin-bottom:16px}
+.digest p{font-size:15px;color:#c9c4bc;line-height:1.8}
+.digest ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+.digest li{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:#e6e2dc}
+.digest li svg{flex:none;margin-top:4px}
+
+/* footer */
+.site-footer{background:#fff;border-top:1px solid var(--line);padding:44px 0 30px;margin-top:20px}
+.footer-top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.footer-brand{max-width:26em}
+.footer-brand .logo{margin-bottom:12px}
+.footer-brand p{font-size:13.5px;color:var(--muted);line-height:1.8}
+.footer-nav{display:flex;gap:56px;flex-wrap:wrap}
+.footer-col h4{font-size:13px;letter-spacing:1px;color:var(--muted);font-weight:700;margin-bottom:12px}
+.footer-col a{display:block;font-size:14px;color:var(--ink-soft);margin-bottom:9px}
+.footer-col a:hover{color:var(--hot-deep)}
+.footer-bottom{padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .digest{grid-template-columns:1fr;padding:32px;gap:26px}
+  .stats-inner{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:none}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}
+}
+@media(max-width:640px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:10px}
+  .nav{gap:2px}
+  .nav a{font-size:13.5px;padding:6px 10px}
+  .grid-3,.grid-2{grid-template-columns:1fr}
+  .hero{padding:34px 0 30px}
+  section{padding:40px 0}
+  .feature-row{grid-template-columns:40px 1fr;padding:16px 18px}
+  .fr-badge{display:none}
+  .footer-nav{gap:32px}
+  .digest{padding:26px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="每日大赛mrdsfun 首页">
+      <span class="mark">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M18 42l8-20 6 12 6-12 8 20" stroke="#ff5b3d" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span>每日大赛mrdsfun</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#hot">今日热点</a>
+      <a href="#rank">热门榜</a>
+      <a href="#topic">话题合集</a>
+      <a href="#about">关于本页</a>
+      <a class="cta" href="#hot">看今日看点</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>热点速览 · 每日更新</span>
+        <h1>每日大赛mrdsfun</h1>
+        <p class="hero-sub">每日大赛mrdsfun 是一个以当日热议内容为核心的热点聚合入口。这里把分散在各处的爆料、讨论与榜单线索收拢到一处，让你用几分钟看清今天大家都在聊什么、哪些内容正在升温。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#hot">进入今日热点
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#rank">查看热门榜</a>
+        </div>
+      </div>
+      <aside class="hero-visual" aria-label="今日看点速览">
+        <div class="hv-label">TODAY · 看点速览</div>
+        <div class="hv-list">
+          <div class="hv-item"><span class="hv-num">01</span><span class="hv-text">当日讨论量最高的几条线索集中呈现</span></div>
+          <div class="hv-item"><span class="hv-num">02</span><span class="hv-text">爆料内容按话题归类，便于连续阅读</span></div>
+          <div class="hv-item"><span class="hv-num">03</span><span class="hv-text">热门榜记录话题热度变化的大致走向</span></div>
+          <div class="hv-item"><span class="hv-num">04</span><span class="hv-text">每日大赛mrdsfun 每日汇总，保持更新节奏</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="wrap stats-inner">
+      <div class="stat"><b>每日</b><span>内容更新频率</span></div>
+      <div class="stat"><b>3 类</b><span>热点 / 爆料 / 榜单</span></div>
+      <div class="stat"><b>多话题</b><span>按主题归类阅读</span></div>
+      <div class="stat"><b>速览</b><span>几分钟读完当日要点</span></div>
+    </div>
+  </div>
+
+  <section id="hot">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title"><span class="bar"></span>今日热点</h2>
+        <p class="sec-desc">每日大赛mrdsfun 的热点区按话题维度拆分，把当天讨论集中的内容先摆出来，再补上背景与后续走向。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span class="tag">热议</span>
+          <h3>当日讨论最集中的话题</h3>
+          <p>热点区优先呈现讨论量靠前的几条线索，说明它们为何被关注、讨论从何而起，并标注内容的性质是爆料、观点还是转述，方便你判断可信程度。</p>
+          <div class="meta"><span>话题归类</span><span>持续关注</span></div>
+        </article>
+        <article class="card">
+          <span class="tag gold">爆料</span>
+          <h3>爆料线索的集中呈现</h3>
+          <p>零散的说法被整理成条目，同一事件的不同版本并列展示。每日大赛mrdsfun 不替读者下结论，只把已知说法与来源线索放在一起，供你自行比对。</p>
+          <div class="meta"><span>多版本并列</span><span>来源标注</span></div>
+        </article>
+        <article class="card">
+          <span class="tag dark">走势</span>
+          <h3>热度变化的粗略观察</h3>
+          <p>热点并非一成不变。这里记录话题从出现到扩散的大致节奏，哪些在上升、哪些已回落，帮助你判断当天内容的整体温度。</p>
+          <div class="meta"><span>节奏观察</span><span>每日更新</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title"><span class="bar"></span>热门榜</h2>
+        <p class="sec-desc">热门榜按话题受关注程度排列，每日大赛mrdsfun 的榜单更重视阅读线索的连续性，而非单一数字。</p>
+      </div>
+      <div class="feature">
+        <div class="feature-row">
+          <span class="fr-num">1</span>
+          <div class="fr-body">
+            <h3>榜首话题：讨论密度最高</h3>
+            <p>当日被反复提及的线索，通常伴随多个角度的说法与补充。</p>
+          </div>
+          <span class="fr-badge">热度上升</span>
+        </div>
+        <div class="feature-row">
+          <span class="fr-num">2</span>
+          <div class="fr-body">
+            <h3>次席话题：爆料与回应交织</h3>
+            <p>同一事件出现不同版本，阅读时建议对照前后条目。</p>
+          </div>
+          <span class="fr-badge">持续讨论</span>
+        </div>
+        <div class="feature-row">
+          <span class="fr-num">3</span>
+          <div class="fr-body">
+            <h3>第三位：新出现的线索</h3>
+            <p>刚进入视野的内容，信息量有限，适合先看背景再看细节。</p>
+          </div>
+          <span class="fr-badge">新进榜</span>
+        </div>
+        <div class="feature-row">
+          <span class="fr-num">4</span>
+          <div class="fr-body">
+            <h3>回落话题：热度趋于平稳</h3>
+            <p>讨论已过高峰，留存的内容多为回顾与总结性说法。</p>
+          </div>
+          <span class="fr-badge">热度回落</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="topic">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title"><span class="bar"></span>话题合集</h2>
+        <p class="sec-desc">按主题把每日大赛mrdsfun 的内容分门别类，方便你顺着一条线索读完整个脉络。</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <span class="tag">合集一</span>
+          <h3>事件线：从出现到扩散</h3>
+          <p>把同一事件在不同时间点出现的说法按顺序排列，先看起点，再看后续补充与修正。每日大赛mrdsfun 的做法是保留原始表述，避免在转述中改变原意，让读者能看清一条线索是怎么被讨论起来的。</p>
+          <div class="meta"><span>时间顺序</span><span>原文保留</span></div>
+        </article>
+        <article class="card">
+          <span class="tag gold">合集二</span>
+          <h3>观点线：不同说法的对照</h3>
+          <p>同一件事常有多套说法。合集把支持和质疑的声音并排放置，并注明各自依据，读者可以快速看出分歧点在哪里，而不是只看到单方面结论。</p>
+          <div class="meta"><span>多方对照</span><span>分歧标注</span></div>
+        </article>
+        <article class="card">
+          <span class="tag dark">合集三</span>
+          <h3>回顾线：已经沉淀的内容</h3>
+          <p>热度退去后仍值得回看的条目会进入回顾线。每日大赛mrdsfun 在这里保留关键节点与最终走向，为后续同类话题提供参照。</p>
+          <div class="meta"><span>沉淀归档</span><span>节点留存</span></div>
+        </article>
+        <article class="card">
+          <span class="tag">合集四</span>
+          <h3>速览线：几分钟读完当天</h3>
+          <p>时间有限时，先看速览线。它把当天最重要的几条内容压缩成短句，每条附一句背景说明，读完即可掌握大致轮廓，再决定深入哪一条。</p>
+          <div class="meta"><span>短句速览</span><span>按需深入</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="digest">
+        <div>
+          <h2>关于每日大赛mrdsfun</h2>
+          <p>每日大赛mrdsfun 关注的是热点的组织方式：把零散的爆料、讨论与榜单信息按主题串起来，让阅读有顺序、有层次。页面本身不生产内容，也不对说法真伪作最终判断，只负责把已知信息摆清楚，并标明每条内容的性质。</p>
+        </div>
+        <ul>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#ff5b3d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>内容按话题归类，同一条线索前后可追溯。</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#ff5b3d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>爆料保留原始表述，多版本并列呈现。</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#ff5b3d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>榜单反映关注度走向，不作为事实结论。</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#ff5b3d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>每日大赛mrdsfun 保持每日更新节奏。</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#top">
+          <span class="mark">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M18 42l8-20 6 12 6-12 8 20" stroke="#ff5b3d" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span>每日大赛mrdsfun</span>
+        </a>
+        <p>每日大赛mrdsfun 是热点内容的聚合首页，围绕当日热议、爆料线索与热门榜单组织阅读顺序，帮助访问者用较少时间了解当天讨论焦点。</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h4>内容</h4>
+          <a href="#hot">今日热点</a>
+          <a href="#rank">热门榜</a>
+          <a href="#topic">话题合集</a>
+        </div>
+        <div class="footer-col">
+          <h4>入口</h4>
+          <a href="#hot">看今日看点</a>
+          <a href="#about">关于本页</a>
+          <a href="#" download>下载</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 每日大赛mrdsfun · 热点内容聚合首页</span>
+      <span>内容以话题整理为主，说法真伪请自行比对</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
